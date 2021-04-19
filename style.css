@@ -7,6 +7,13 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 80vw;
+}
+
+#mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .title {
@@ -21,5 +28,5 @@ body {
 }
 
 #tableauPlaceholder {
-  width: 80vw;
+  width: 1500px;
 }
