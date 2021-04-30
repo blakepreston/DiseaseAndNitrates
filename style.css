@@ -27,6 +27,14 @@ body {
   display: flex;
 }
 
-#tableauPlaceholder {
+/* #tableauPlaceholder {
   width: 1500px;
+}
+
+#tableauPlaceholderGraph {
+  width: 1500px;
+} */
+
+#gap {
+  height: 50px;
 }
