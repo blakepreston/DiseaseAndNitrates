@@ -1,6 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: deepskyblue;
+  background-color: rgb(173, 234, 255);
   font-family: "Roboto", sans-serif;
+  margin: 0;
 }
 
 #container {
@@ -18,8 +23,25 @@ body {
 
 .title {
   color: white;
+  background-color: white;
+  width: 100vw;
   padding: 1px;
-  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3vh;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.title h1 {
+  margin-left: 2vw;
+  color: black;
+  font-weight: 900;
+}
+
+.title img {
+  height: 7em;
+  margin-left: 5vw;
 }
 
 #viz1618363459300 {
@@ -37,4 +59,50 @@ body {
 
 #gap {
   height: 50px;
+}
+
+.description img {
+  /* height: 20vh; */
+  width: 60vw;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.description p {
+  width: 50vw;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonContainer button {
+  padding: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  background-color: rgb(65, 201, 247);
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.buttonContainer button:hover {
+  background-color: rgb(31, 195, 250);
 }
