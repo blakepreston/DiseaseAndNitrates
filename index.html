@@ -12,9 +12,19 @@
 <body>
 
     <div class="mainContainer" id="mainContainer">
+        <div class="menuSlide" id="menuSlide">
+            <h3>Resources Used:</h3>
+            <a href="https://tracking.idph.iowa.gov/" target="_blank">IDPH</a>
+            <a href="https://shri.public-health.uiowa.edu/cancer-data/" target="_blank">Iowa Public Health</a>
+            <a href="https://www.cancer-rates.info/ia/" target="_blank">Cancer Rates</a>
+            <a href="https://tracking.idph.iowa.gov/" target="_blank">IDPH Tracking</a>
+            <img src="menu.png" alt="" id="menu" onclick="menuChange()">
+        </div>
+
         <div class="title">
             <img src="logo.png" alt="">
             <h1>Iowa Water Quality and Disease</h1>
+            <img src="menu.png" alt="" id="menu" onclick="menuChange()">
         </div>
 
         <div id="container" class="container">
@@ -32,7 +42,7 @@
                     have found that levels closer to 5 mg/l can cause these different cancers as well. 
                     <br>
                     <br>
-                    Check out our map that includes nitrate levels and disease count in each county. Also, use the graph tool to explore the relationship
+                    Check out our map that includes nitrate levels and disease count (per 100,000) in each county. Also, use the graph tool to explore the relationship
                     between the nitrate levels and a given disease. 
                 </p>
             </div>
@@ -229,5 +239,6 @@
                         vizElement.parentNode.insertBefore(scriptElement, vizElement);                
                 </script>
 
+                <script src="main.js"></script>
         </body>
 </html>

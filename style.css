@@ -6,6 +6,7 @@ body {
   background-color: rgb(173, 234, 255);
   font-family: "Roboto", sans-serif;
   margin: 0;
+  overflow-x: hidden;
 }
 
 #container {
@@ -27,6 +28,7 @@ body {
   width: 100vw;
   padding: 1px;
   align-items: center;
+  justify-content: center;
   display: flex;
   flex-direction: row;
   margin-bottom: 3vh;
@@ -34,14 +36,14 @@ body {
 }
 
 .title h1 {
-  margin-left: 2vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
   color: black;
   font-weight: 900;
 }
 
 .title img {
-  height: 7em;
-  margin-left: 5vw;
+  height: 110px;
 }
 
 #viz1618363459300 {
@@ -105,4 +107,64 @@ body {
 
 .buttonContainer button:hover {
   background-color: rgb(31, 195, 250);
+}
+
+#menu {
+  height: 30px;
+  transition-duration: 1s;
+}
+
+#menu:hover {
+  cursor: pointer;
+}
+
+.menuSlide {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  color: white;
+  background-color: rgb(62, 206, 253);
+  height: 300vh;
+  width: 20em;
+  align-items: center;
+  left: 100vw;
+  z-index: 5;
+}
+
+.menuSlide a {
+  text-decoration: none;
+  margin-top: 35px;
+  font-weight: 800;
+  color: white;
+}
+
+.menuSlide img {
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .title {
+    flex-direction: column;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  #menu {
+    margin-bottom: 15px;
+  }
+
+  .description img {
+    width: 90vw;
+    height: 10vh;
+  }
+
+  .description p {
+    width: 95vw;
+  }
+
+  .menuSlide {
+    width: 100vw;
+  }
 }
